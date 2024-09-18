@@ -453,17 +453,21 @@ mv backup.tar backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/d7c607da-012b-4200-a6b0-d3ad6b8afcd9)
 
 tar -xvf backup.tar
 ## OUTPUT
+cd ![image](https://github.com/user-attachments/assets/af6b24ba-ca30-4646-ba98-afc9f3738983)
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![image](https://github.com/user-attachments/assets/42143ae3-b9f6-4cf3-988a-6ab622a86cd8)
+
 gunzip backup.tar.gz
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/ce75d6bb-c72c-4b31-8997-669ad8ff20a3)
 
  
 # Shell Script
@@ -474,6 +478,7 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/df43fccc-2ce5-4f88-840a-c88dec5e459d)
 
  
 cat << stop > herecheck.txt
@@ -487,20 +492,10 @@ stop
 cat herecheck.txt
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/eacd5bf8-ecbd-4da6-a174-2ee5bfb67687)
 
 cat < scriptest.sh 
 ```bash
-\#!/bin/sh
-echo “File name is $0 ”
-echo "File name is " `basename $0`
-echo “First arg. is ” $1
-echo “Second arg. is ” $2
-echo “Third arg. is ” $3
-echo “Fourth arg. is ” $4
-echo 'The $@ is ' $@
-echo 'The $\# is ' $1#
-echo 'The $$ is ' $$
-ps
 ^d
  ```
 
@@ -525,23 +520,29 @@ chmod 777 scriptest.sh
 
 ## OUTPUT
 
- 
+ ![image](https://github.com/user-attachments/assets/ee27735d-1569-4e30-ae48-2a177137a372)
+
 ls file1
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/b9ad190c-a354-4dd6-8656-325ae0160954)
 
 echo $?
 ## OUTPUT 
+![image](https://github.com/user-attachments/assets/b5bdf082-5008-4402-b6ee-e35d3d90b141)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
 ## OUTPUT 
- 
+![image](https://github.com/user-attachments/assets/92ffe941-3fe1-4f10-a31d-5a094fcf4ffe)
+
 abcd
- 
+
+
 echo $?
  ## OUTPUT
-
+![image](https://github.com/user-attachments/assets/57e26d7b-3121-4466-933e-97c656b376ec)
 
  
 # mis-using string comparisons
@@ -572,14 +573,16 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
+## OUTPUT
 
+![image](https://github.com/user-attachments/assets/f4e1794f-a193-4203-81eb-f7d1f9efe445)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/7bf538fc-b877-4645-ba59-c1780459f7db)
 
 
 # check file ownership
@@ -607,6 +610,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/04b5a431-a997-4427-8a55-2675c6a78639)
 
 # check if with file location
 cat>ifnested.sh 
@@ -654,6 +658,7 @@ fi
 ./ifnested.sh 
 ## OUTPUT
 
+![image](https://github.com/user-attachments/assets/a44406ff-9808-4b21-b629-32e0993371d4)
 
 
 # using numeric test comparisons
@@ -696,7 +701,8 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/user-attachments/assets/09eb951a-4128-44ea-a040-2332016e74b2)
 
 # check if a file
 cat > ifnested.sh 
@@ -745,7 +751,8 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+## OUTPUT
+![image](https://github.com/user-attachments/assets/643fd8ed-ec6f-4cc4-af32-4857f3caf52c)
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -774,6 +781,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/28112de8-32a4-4c34-a8c7-320d07dee4c5)
 
 
 # testing compound comparisons
@@ -790,6 +798,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/b5818c5e-c155-43a7-80c1-12e2dc02d787)
 
 # using the case command
 cat >casecheck.sh 
@@ -809,7 +818,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+![image](https://github.com/user-attachments/assets/7c8f909f-daa0-49b4-a901-0f179cfd268e)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -824,7 +835,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+## OUTPUT
+ ![image](https://github.com/user-attachments/assets/07fdf81f-1aed-439d-9ec0-e721fd3c1ebb)
+
  
 cat untiltest.sh 
 ```bash
@@ -838,7 +851,7 @@ done
 ``` 
 $ chmod 755 untiltest.sh
  
- 
+ ![image](https://github.com/user-attachments/assets/68cd5d2a-67ed-4627-b78c-727ded08bd32)
  
 cat forin1.sh 
 ```bash
@@ -851,8 +864,9 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
- 
+ ## OUTPUT
+![image](https://github.com/user-attachments/assets/dd748411-1cfb-430f-ab83-4e2e9e3f31b3)
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -877,7 +891,8 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+ ![image](https://github.com/user-attachments/assets/14727090-30f1-4d9a-ae98-0a738fa2a4a1)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -888,7 +903,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+ ![image](https://github.com/user-attachments/assets/d21864fd-bf5a-4ab2-85ec-a21d0d3110c3)
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -922,7 +938,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![image](https://github.com/user-attachments/assets/7084ee73-b50d-408a-80c4-2c5ff98594c5)
 
 cat forctype.sh 
 ```bash
